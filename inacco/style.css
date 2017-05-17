@@ -1,0 +1,92 @@
+@charset "utf-8";
+/*
+Theme Name: inacco
+Theme URI: http://www.inacco.com
+Description: inacco.com
+Version: 2.0
+Author: Marios Lublinski
+Author URI: http://www.dessign.net
+Tags: 3 column theme, clean, portfolio
+*/
+/* =WordPress Core
+-------------------------------------------------------------- */
+/* 固定するのは「position: fixed;」です。 */
+.inquary {
+  right: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.menub{
+	position: fixed;
+	} 
+/* スクロールする場所：固定ナビゲーションの高さ＋余白をpadding-topに指定したりします。 */
+.main-section {
+  padding: 60px 0 0 0;
+}
+
+.sidebar li{
+	font-size: 80%;
+}
+body{
+    background-image: url("./img/toptitlemark.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+
+
+/* BASE  STYLE*/
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.blog .sticky .entry-header .entry-meta {
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
