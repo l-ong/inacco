@@ -31,11 +31,35 @@
 
           </div>
           <div class="large-4 columns">
+          <!--
+          
             <a data-pin-do="embedUser" href="http://www.pinterest.com/inacco/" data-pin-scale-width="60" data-pin-scale-height="180" data-pin-board-width="300"></a>
-            <!-- Please call pinit.js only once per page -->
             <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>            
-
-
+-->
+            <h4>
+            instagram
+            </h4>
+            <ul data-orbit>
+            <?php
+                //アクセストークンからインスタのデータをjsonで取得
+                $json = file_get_contents("https://api.instagram.com/v1/users/self/media/recent/?access_token=5465601579.88ed633.900b010fc9a94c0dab36c6d7675ff54e");
+                $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+             
+                $arr = json_decode($json,true);
+             
+                // JSONをPHPの配列に変換
+                foreach( $arr as $key => $value ){
+                            $arr[$key] = $value;
+                        }
+             
+                //最新の投稿から8つ目までをループ表示
+                for($i=0;$i<8;$i++){
+                    $Link = $arr['data'][$i]['link'];
+                    $imgSrc = $arr['data'][$i]['images']['standard_resolution']['url'];
+                    echo '<li><a href="'.$Link.'" target="_blank" ><img src="'.$imgSrc.'"></li>';
+                }
+            ?>
+            </ul>
           </div>
         </div>
       </div>
