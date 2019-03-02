@@ -33,7 +33,13 @@
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/foundation-icons.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/foundation.css" />
+    <script src="<?php echo get_template_directory_uri(); ?>/js/foundation/foundation.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/foundation/foundation.equalizer.js"></script>
     <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet" type="text/css">
+
+  <script>
+    $(document).foundation();
+  </script>
 
     <?php get_template_part('ogp');?>
 

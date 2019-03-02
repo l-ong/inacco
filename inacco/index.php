@@ -27,7 +27,7 @@
 <a href="お問合せ/">お問い合わせはフォーム</a>からお願いいたします。
           </p>
           <a href="イラスト製作について/" class="button small"><i class="fi-info"></i> イラスト制作について</a>
-        　
+        　<a href="イラスト製作について/よくある質問/" class="button small"><i class="fi-lightbulb"></i> よくある質問</a>
         </div>
         <div class="large-3 small-12 columns">
           <img src="http://inacco.com/wp-content/uploads/INACCOINFO.png">
